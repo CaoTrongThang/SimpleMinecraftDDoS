@@ -47,7 +47,12 @@ public class GUI {
 
     public String getIP() {
         System.out.print("Server's IP: ");
-
+        String ip = scan.nextLine();
+        if (!ip.equalsIgnoreCase("localhost") || !ip.equalsIgnoreCase("127.0.0.1")) {
+            System.out.println("Only localhost is available right now, I don't wanna make any harm to others <3");
+            System.exit(0);
+            return null;
+        }
         return scan.nextLine();
     }
 
@@ -83,7 +88,6 @@ public class GUI {
     }
 
     public void printDDoSInfo() {
-        System.out.print("\033[H\033[2J");
         System.out.println("<===========> DDOS STATS <===========>");
         System.out.println("\n");
 

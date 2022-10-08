@@ -16,7 +16,7 @@ java -jar <path to SimpleMinecraftDDoS.jar>
 ```
 ![](https://media.giphy.com/media/gsodtbrtmkK1qnwKZx/giphy.gif)
 
-If that's still too vague for you, know what?, google is your friend "how to run a .jar file".
+If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
 
 ## Community
 [Discord](https://discord.gg/Fg4cSDt)

@@ -12,6 +12,6 @@ So basiclly I'm a pure angle, I've seen some poor server owners that want to tes
 ## How to use?
 Open your terminal and type this
 ```
-java -jar <path to file you have downloaded>
+java -jar <path to SimpleMinecraftDDoS.jar>
 ```
 If that's still too vague for you, know what?, google is your friend "how to run a .jar file".

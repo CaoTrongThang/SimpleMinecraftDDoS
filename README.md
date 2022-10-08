@@ -14,4 +14,9 @@ Open your terminal and type this
 ```
 java -jar <path to SimpleMinecraftDDoS.jar>
 ```
-If that's still too vague for you, know what?, google is your friend "how to run a .jar file".
+![](https://media.giphy.com/media/gsodtbrtmkK1qnwKZx/giphy.gif)
+
+If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
+
+## Community
+[Discord](https://discord.gg/Fg4cSDt)

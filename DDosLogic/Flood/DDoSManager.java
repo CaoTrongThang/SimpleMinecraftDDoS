@@ -1,4 +1,4 @@
-package src.Main.DDosSoftware.DDosLogic.SYNFlood;
+package src.Main.DDosSoftware.DDosLogic.Flood;
 
 import src.Main.DDosSoftware.DDosLogic.Client.ClientManager;
 import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;

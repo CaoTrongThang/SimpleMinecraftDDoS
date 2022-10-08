@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.util.Scanner;
 
 import src.Main.DDosSoftware.DDosLogic.Client.ClientPacketManager;
-import src.Main.DDosSoftware.DDosLogic.SYNFlood.DDoSManager;
+import src.Main.DDosSoftware.DDosLogic.Flood.DDoSManager;
 import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;
 import src.Main.DDosSoftware.Enums.Intensity;
 

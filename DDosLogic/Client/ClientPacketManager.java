@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-import src.Main.DDosSoftware.DDosLogic.SYNFlood.DDoSManager;
+import src.Main.DDosSoftware.DDosLogic.Flood.DDoSManager;
 import src.Main.DDosSoftware.EntryPoint.GUI;
 
 public class ClientPacketManager {

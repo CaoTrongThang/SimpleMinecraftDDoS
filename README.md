@@ -22,7 +22,7 @@ If it's still too vague for you, know what?, google is your friend "how to run a
 
 ## FAQs
 Question: Why the sofware is not working?
-  Answer: The server might doesn't use viaversion and viabackward plugin.
+  Answer: The server might doesn't use viaversion and viabackward plugin or it's a premium server.
 
 Question: How to ddos others?
   Answer: So basiclly you need to know their PORTs

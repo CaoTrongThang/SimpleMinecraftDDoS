@@ -20,5 +20,12 @@ https://user-images.githubusercontent.com/51023235/194731659-0ec9a032-7600-4a92-
 
 If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
 
+## FAQs
+Question: How to ddos others?
+  Answer: So basiclly you need to know their PORTs
+
+Question: How can you be so handsome?
+  Answer: Coding
+
 ## Community
 [Discord](https://discord.gg/Fg4cSDt)

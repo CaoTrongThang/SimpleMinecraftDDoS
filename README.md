@@ -14,7 +14,8 @@ Open your terminal and type this
 ```
 java -jar <path to SimpleMinecraftDDoS.jar>
 ```
-![](https://media.giphy.com/media/gsodtbrtmkK1qnwKZx/giphy.gif)
+
+https://user-images.githubusercontent.com/51023235/194731255-7393997a-aff9-48f7-93f7-b6607ac29c98.mp4
 
 If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
 

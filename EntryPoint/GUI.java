@@ -47,13 +47,7 @@ public class GUI {
 
     public String getIP() {
         System.out.print("Server's IP: ");
-        String ip = scan.nextLine();
-        if (ip.equalsIgnoreCase("localhost") || ip.equalsIgnoreCase("127.0.0.1")) {
-            return ip.toUpperCase();
-        }
-        System.out.println("Only localhost is available right now, I don't wanna make any harm to others <3");
-        System.exit(0);
-        return null;
+        return scan.nextLine().toUpperCase();
     }
 
     public int getPort() {

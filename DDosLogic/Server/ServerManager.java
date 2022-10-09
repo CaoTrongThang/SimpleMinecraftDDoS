@@ -58,6 +58,8 @@ public class ServerManager {
         } catch (IOException e) {
             canConnect = false;
             return false;
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
         }
         try {
             server.close();

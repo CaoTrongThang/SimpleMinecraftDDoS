@@ -1,7 +1,7 @@
 # Simple Minecraft DDoS
 
 ## Introduction
-DDoS a minecraft server that you want. Fake 1.18.2 client to join the server, will support more version later.
+DDoS a minecraft server that you want. Fake 1.18.2 version client to join the server, will support more version later.
 
 ## Download
 **[Simple Minecraft DDoS Download](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/tag/MinecraftDDoS)**

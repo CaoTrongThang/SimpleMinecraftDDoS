@@ -29,7 +29,7 @@ My English is not really good so if it's still too vague for you, know what?, go
 ## FAQs
 
 Question: Why the sofware is not working?
-Answer: The server might doesn't use viaversion and viabackward plugin (my sofware fake 1.18.2 to join the server), or it's a premium server.
+Answer: The server might doesn't use viaversion and viabackward plugin (my sofware fake 1.18.2 client to join the server, will update more version later), or it's a premium server.
 
 Question: How to ddos others?
 Answer: So basiclly you need to know their PORTs

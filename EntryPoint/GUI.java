@@ -88,8 +88,9 @@ public class GUI {
         System.out.println("SERVER'S IP: " + ServerManager.getIp().getHostAddress());
         System.out.println("SERVER'S PORT: " + ServerManager.getPort());
         System.out.println("DDoS INTENSITY: " + DDoS.getIntensity());
-        System.out.println("DELAY TIME PER BOT: " + (double) DDoS.getDelayTime() / 1000 + "s/bot");
-        System.out.println("PACKET'S SIZE: " + ClientPacketManager.packetList.size());
+        System.out.println("DELAY TIME PER BOT (150 IS RECOMMENED): " + (double) DDoS.getDelayTime() / 1000 + "s/bot");
+        System.out.println("PACKET'S SIZE (BASED ON INTENSITY): " + ClientPacketManager.packetList.size());
+        System.out.println("BOT'S VERSION (DEFAULT): " + "1.18.2");
 
         System.out.println("\n");
         System.out.println("<===========> DDOS STATS <===========>");

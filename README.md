@@ -29,12 +29,15 @@ My English is not really good so if it's still too vague for you, know what?, go
 ## FAQs
 
 -Question: Why the sofware is not working?
+
 --Answer: The server might doesn't use viaversion and viabackward plugin (my sofware fake 1.18.2 client to join the server, will update more version later), or it's a premium server.
 
 -Question: How to DDoS non-local server?
+
 --Answer: So basiclly you need to know their PORTs
 
 -Question: Why only 1 bot is joined when DDoS-ing non-local server?
+
 --Answer: So because you're DDoS-ing on the same IP, it's easy for the router to apply mitigations to your data traffic, most of DDoS nowadays use botnet, which DDoS by alot of different computers, which mean different IP, so it's hard to deal with them more than DDoS from just 1 machine. SO YOU CAN STILL DDoS other servers, but try to set the DELAY TIME PER BOT to higher, maybe 5000, but that's not gonna do much damage to their server btw.
 
 -Question: How can you be so handsome?

@@ -34,6 +34,9 @@ Answer: The server might doesn't use viaversion and viabackward plugin (my sofwa
 Question: How to ddos others?
 Answer: So basiclly you need to know their PORTs
 
+Question: Why only 1 bot is joined when DDoS-ing non-local server?
+Answer: So because you're DDoS-ing on the same IP, it's easy for the router apply mitigations to your data traffic, most of DDoS nowadays use botnet, which DDoS by alot of different computers, which mean different IP, so it's hard to deal with them more than DDoS from just 1 machine.
+
 Question: How can you be so handsome?
 Answer: Coding
 

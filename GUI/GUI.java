@@ -1,9 +1,8 @@
-package src.Main.DDosSoftware.EntryPoint;
+package src.Main.DDosSoftware.GUI;
 
 import java.lang.reflect.Field;
 import java.util.Scanner;
 
-import src.Main.DDosSoftware.DDosLogic.Client.ClientPacketManager;
 import src.Main.DDosSoftware.DDosLogic.Flood.DDoSManager;
 import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;
 import src.Main.DDosSoftware.Enums.Intensity;
@@ -15,30 +14,26 @@ import src.Main.DDosSoftware.Enums.Intensity;
  */
 public class GUI {
     private Scanner scan = new Scanner(System.in);
-    public static DDoSManager DDoS;
 
     private GUI() {
         ServerManager.bindIPAndPort(getIP(), getPort());
         System.out.println();
 
-        if (ServerManager.connectionTest()) {
-            System.out
-                    .println("The IP and PORT is working properly, continuing to next step...\n");
+        // Check if can connect to the server, if no, stop the program
+        ServerManager.connectionTest();
 
-            DDoS = new DDoSManager().setIntensity(getIntensity()).setDelayTime(getDelayTime());
-            ClientPacketManager.generateRandomPacket();
+        DDoSManager.setIntensity(getIntensity());
+        DDoSManager.setDelayTime(getDelayTime());
 
-            printDDoSInfo();
+        printDDoSInfo();
 
-            if (doubleCheck()) {
-                DDoS.start();
-            } else {
-                System.out.println("Stopping the program...");
-                System.exit(0);
-            }
+        if (doubleCheck()) {
+            DDoSManager.start();
         } else {
-            System.out.println("Failed to connect to the IP and PORT that you provided, please try again...");
+            System.out.println("Stopping the program...");
+            System.exit(0);
         }
+
     }
 
     public static GUI start() {
@@ -46,22 +41,36 @@ public class GUI {
     }
 
     public String getIP() {
-        System.out.print("Server's IP: ");
-        return scan.nextLine().toUpperCase();
+        System.out.println("Server's IP: ");
+        System.out.print("- ");
+        String IP = scan.nextLine();
+        if (IP.equalsIgnoreCase("") || IP.isEmpty()) {
+            return "localhost";
+        } else {
+            return IP;
+        }
+
     }
 
     public int getPort() {
-        System.out.print("Server's PORT: ");
-        return scan.nextInt();
+        System.out.println("Server's PORT: ");
+        System.out.print("- ");
+        String PORT = scan.nextLine();
+        System.out.println();
+        if (PORT == null || PORT.equalsIgnoreCase("")) {
+            return 25565;
+        } else {
+            return Integer.parseInt(PORT);
+        }
     }
 
     public Intensity getIntensity() {
-        scan.nextLine();
         System.out.println("Intensity: ");
         for (Field field : Intensity.class.getFields()) {
             System.out.println("+ " + field.getName());
         }
-        System.out.print("Choose the intensity: ");
+        System.out.println("Type the intensity: ");
+        System.out.print("- ");
         String intense = scan.nextLine().toUpperCase();
         if (intense == null || intense.equalsIgnoreCase("")) {
             return Intensity.valueOf("LOW");
@@ -72,8 +81,10 @@ public class GUI {
 
     public long getDelayTime() {
         System.out.println();
-        System.out.print("Delay time per bot (in miliseconds): ");
+        System.out.println("Delay time per bot (in miliseconds): ");
+        System.out.print("- ");
         String delayTime = scan.nextLine();
+        System.out.println();
         if (delayTime == null || delayTime.equalsIgnoreCase("")) {
             return DDoSManager.DEFAULT_DELAY_TIME;
         } else {
@@ -87,9 +98,13 @@ public class GUI {
 
         System.out.println("SERVER'S IP: " + ServerManager.getIp().getHostAddress());
         System.out.println("SERVER'S PORT: " + ServerManager.getPort());
-        System.out.println("DDoS INTENSITY: " + DDoS.getIntensity());
-        System.out.println("DELAY TIME PER BOT (150 IS RECOMMENED): " + (double) DDoS.getDelayTime() / 1000 + "s/bot");
-        System.out.println("PACKET'S SIZE (BASED ON INTENSITY): " + ClientPacketManager.packetList.size());
+        System.out.println("DDoS INTENSITY: " + DDoSManager.getIntensity());
+        System.out
+                .println("DELAY TIME PER BOT (150 IS RECOMMENED): " + (double) DDoSManager.getDelayTime() / 1000
+                        + "s/bot");
+        System.out.println(
+                "PACKET'S SIZE (BASED ON INTENSITY): "
+                        + DDoSManager.getBotSizeBaseOnIntensity(DDoSManager.getIntensity()));
         System.out.println("BOT'S VERSION (DEFAULT): " + "1.18.2");
 
         System.out.println("\n");

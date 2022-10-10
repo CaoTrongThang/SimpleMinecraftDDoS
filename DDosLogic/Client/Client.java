@@ -1,16 +1,21 @@
 package src.Main.DDosSoftware.DDosLogic.Client;
 
-import java.io.IOException;
-import java.io.OutputStream;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
-import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;
+import src.Main.DDosSoftware.DDosLogic.Packets.IPacket;
+import src.Main.DDosSoftware.Enums.MinecraftVersion;
 
 public class Client {
     public Socket socket;
+    private MinecraftVersion version;
+    public IPacket packet;
 
-    public Client() {
+    public MinecraftVersion getVersion() {
+        return version;
+    }
+
+    public Client(MinecraftVersion version) {
+        this.version = version;
     }
 
 }

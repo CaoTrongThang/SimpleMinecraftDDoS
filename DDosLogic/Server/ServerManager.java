@@ -42,7 +42,7 @@ public class ServerManager {
     }
 
     /**
-     * Connect to the server
+     * Test the connectability to the server
      * 
      * @return false if connection isn't established, true if connection is
      *         established
@@ -53,14 +53,19 @@ public class ServerManager {
         try {
             server = new Socket(ip, port);
         } catch (UnknownHostException e) {
+            System.out.println("Failed to connect to the IP and PORT that you provided, please try again...\n");
             canConnect = false;
             return false;
         } catch (IOException e) {
+            System.out.println("Failed to connect to the IP and PORT that you provided, please try again...");
             canConnect = false;
             return false;
         } catch (IllegalArgumentException e) {
+            System.out.println("Failed to connect to the IP and PORT that you provided, please try again...");
             System.out.println(e);
         }
+        System.out
+                .println("The IP and PORT is working properly...\n");
         try {
             server.close();
         } catch (Exception e) {

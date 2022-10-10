@@ -6,8 +6,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-import javax.sound.sampled.Port;
-
 import src.Main.DDosSoftware.DDosLogic.Packets.Packet_1_18_2;
 import src.Main.DDosSoftware.GUI.GUI;
 

@@ -2,8 +2,9 @@
 
 ## Introduction
 
-DDoS a minecraft server that you want.
-In detail, the software will create tons of non-premium minecraft 1.18.2 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
+In short: DDoS a minecraft server that you want.
+
+In detail: the software will create tons of non-premium minecraft 1.18.2 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
 
 ## Download
 
@@ -23,12 +24,12 @@ java -jar <path to SimpleMinecraftDDoS.jar>
 
 https://user-images.githubusercontent.com/51023235/194731659-0ec9a032-7600-4a92-af83-559545e528af.mp4
 
-If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
+My English is not really good so if it's still too vague for you, know what?, google is your friend "how to run a .jar file".
 
 ## FAQs
 
 Question: Why the sofware is not working?
-Answer: The server might doesn't use viaversion and viabackward plugin (my sofware fake 1.18.2 to join the server), or it's a premium server.
+Answer: The server might doesn't use viaversion and viabackward plugin (my sofware fake 1.18.2 client to join the server, will update more version later), or it's a premium server.
 
 Question: How to ddos others?
 Answer: So basiclly you need to know their PORTs

@@ -8,7 +8,7 @@ In detail: the software will create tons of non-premium minecraft 1.18.2 clients
 
 ## Download
 
-**[SIMPLE MINECRAFT DDOS DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/tag/MinecraftDDoS)**
+**[SIMPLE MINECRAFT DDOS DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases)**
 
 ## Why i create this?
 

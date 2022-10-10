@@ -2,8 +2,9 @@
 
 ## Introduction
 
-DDoS a minecraft server that you want.
-In detail, the software will create tons of non-premium minecraft 1.18.2 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
+In short: DDoS a minecraft server that you want.
+
+In detail: the software will create tons of non-premium minecraft 1.18.2 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
 
 ## Download
 

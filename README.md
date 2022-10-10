@@ -7,7 +7,7 @@ DDoS a minecraft server that you want. Fake 1.18.2 version client(none premium) 
 **[Simple Minecraft DDoS Download](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/tag/MinecraftDDoS)**
 
 ## Why i create this?
-So basiclly I'm a pure angle, I've seen some poor server owners that want to test their server's performance but don't know how to do that, so i created this software.
+So basiclly I'm a pure angle, I've seen some poor server owners that want to test their server's performance but don't know how to do that, so i created this software. Pull requests are welcome <3
 
 ## How to use?
 Open your terminal and type this

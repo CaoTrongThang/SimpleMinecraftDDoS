@@ -23,7 +23,7 @@ java -jar <path to SimpleMinecraftDDoS.jar>
 
 https://user-images.githubusercontent.com/51023235/194731659-0ec9a032-7600-4a92-af83-559545e528af.mp4
 
-If it's still too vague for you, know what?, google is your friend "how to run a .jar file".
+My English is not really good so if it's still too vague for you, know what?, google is your friend "how to run a .jar file".
 
 ## FAQs
 

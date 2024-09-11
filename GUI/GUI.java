@@ -105,7 +105,7 @@ public class GUI {
         System.out.println(
                 "PACKET'S SIZE (BASED ON INTENSITY): "
                         + DDoSManager.getBotSizeBaseOnIntensity(DDoSManager.getIntensity()));
-        System.out.println("BOT'S VERSION (DEFAULT): " + "1.18.2");
+        System.out.println("BOT'S VERSION (DEFAULT): " + "1.21.1");
 
         System.out.println("\n");
         System.out.println("<===========> DDOS STATS <===========>");

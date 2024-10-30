@@ -27,7 +27,3 @@ Answer: Coding
 ## Community
 
 [Discord](https://discord.gg/Fg4cSDt)
-
-This video is 2 years ago, don't watch
-
-https://github.com/user-attachments/assets/62047015-5078-4327-afdf-f84f854bf863

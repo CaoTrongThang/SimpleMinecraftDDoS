@@ -6,7 +6,7 @@ In short: I just made this to test my server's load
 
 In detail: the app will create tons of non-premium minecraft 1.21.1 clients to join the server and make the server's resources handle a lot of players at once, the server might get tired and take a break.
 
-**[SIMPLE MINECRAFT DDOS 2.0 DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/download/SimpleMinecraftDDoSv2.0/SimpleMinecraftDDoS.Setup.2.0.0.exe)**
+**[SIMPLE MINECRAFT DDOS 2.0 DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/latest/download/SimpleMinecraftDDoS.Setup.2.0.0.exe)**
 
 [Videos:](https://github.com/user-attachments/assets/917ab37d-a057-4c70-b4c9-f3a3973efa46)
 

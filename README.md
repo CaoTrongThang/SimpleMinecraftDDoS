@@ -1,4 +1,4 @@
-# Simple Minecraft DDoS
+# Simple Minecraft DDoS VERSION 2.0
 
 ## Introduction
 
@@ -8,7 +8,7 @@ In detail: the software will create tons of non-premium minecraft 1.21.1 clients
 
 Videos
 
-## 2 YEARS AGO (OUTDATED)
+## VERSION 1.0 (2 YEARS AGO (OUTDATED))
 
 ## Introduction
 

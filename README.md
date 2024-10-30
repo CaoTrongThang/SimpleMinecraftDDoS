@@ -8,8 +8,7 @@ In detail: the app will create tons of non-premium minecraft 1.21.1 clients to j
 
 **[SIMPLE MINECRAFT DDOS 2.0 DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases)**
 
-[Videos:](https://github.com/user-attachments/assets/5fd0d5f3-ba86-4e09-ae5b-b65c39bfdf85)
-
+[Videos:](https://github.com/user-attachments/assets/917ab37d-a057-4c70-b4c9-f3a3973efa46)
 
 ## FAQs
 

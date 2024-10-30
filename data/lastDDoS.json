@@ -1,0 +1,7 @@
+{
+  "minecraftVersion": "1.21.1",
+  "serverIp": "192.168.1.1",
+  "serverPort": 25565,
+  "totalBots": 100,
+  "delayEachBot": 0.5
+}

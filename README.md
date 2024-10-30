@@ -2,9 +2,15 @@
 
 ## Introduction
 
-In short: DDoS a minecraft server that you want.
+In short: I just made this for testing my server's load
 
-In detail: the software will create tons of non-premium minecraft 1.18.2 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
+In detail: the software will create tons of non-premium minecraft 1.21.1 clients to join the server and makes the server's resources to handle alot of players at once, the server might get tired and take a break.
+
+Videos
+
+## 2 YEARS AGO (OUTDATED)
+
+## Introduction
 
 ## Download
 

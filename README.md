@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In short: I just made this to test my server's load
+In short: my only purpose was to make this to test my server's load, give me a start so I can update it <3
 
 In detail: the app will create tons of non-premium minecraft 1.21.1 clients to join the server and make the server's resources handle a lot of players at once, the server might get tired and take a break.
 

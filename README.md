@@ -1,4 +1,4 @@
-# Simple Minecraft DDoS VERSION 2.0 (Windows Only)
+# Simple Minecraft DDoS (Windows Only)
 
 ## Introduction
 

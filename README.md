@@ -2,9 +2,9 @@
 
 ## Introduction
 
-In short: my only purpose of making this is to test my server's load, give me a start so I can update it <3
+In short: my only purpose in making this is to test my server's load see if my server can take 1k or 2k players, give me a start so I can update it <3
 
-In detail: the app will create tons of non-premium minecraft 1.21.1 clients to join the server and make the server's resources handle a lot of players at once, the server might get tired and take a break.
+In detail, the app will create many non-premium Minecraft 1.21.1 clients to join the server, requiring the server's resources to handle a large number of players at once. The server might get tired and take a break.
 
 **[SIMPLE MINECRAFT DDOS 2.0 DOWNLOAD](https://github.com/CaoTrongThang/SimpleMinecraftDDoS/releases/latest/download/SimpleMinecraftDDoS.Setup.2.0.0.exe)**
 
@@ -13,7 +13,7 @@ In detail: the app will create tons of non-premium minecraft 1.21.1 clients to j
 ## FAQs
 
 **Question: Why the software is not working?**
-Answer: The servers don't have via version and via backward plugin (my software fakes 1.18.2 client to join the server, will update more versions later), or it's a **premium** server.
+Answer: The servers don't have via version and via backward plugin (my software fakes 1.21.1 client to join the server, will update more versions later), or it's a **premium** server.
 
 **Question: How do we DDoS non-local servers?**
 Answer: So basically you need to know their server's PORTs

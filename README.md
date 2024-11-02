@@ -12,14 +12,14 @@ In detail, the app will create many non-premium Minecraft 1.21.1 clients to join
 
 ## FAQs
 
-**Question: Why the software is not working?**
+**Question: Why is the software not working?**
 Answer: The servers don't have via version and via backward plugin (my software fakes 1.21.1 client to join the server, will update more versions later), or it's a **premium** server.
 
 **Question: How do we DDoS non-local servers?**
 Answer: So basically you need to know their server's PORTs
 
 **Question: Why only 1 bot is joined when DDoS-ing a non-local server?**
-Answer: So because you're using the SAME IP to DDoS, it's easy for the router to apply mitigations to your data traffic. Most DDoS software nowadays uses botnets, which DDoS by a lot of different computers, which means different IPs, so it's hard to deal with them more than DDoS from just 1 machine. SO YOU CAN STILL DDoS other servers but try to set the DELAY TIME PER BOT to higher, maybe 5000, but that's not gonna do much damage to their server btw.
+Answer: So because you're using the SAME IP to DDoS, it's easy for the router to apply mitigations to your data traffic. Most DDoS software nowadays uses botnets, which DDoS by a lot of different computers, which means different IPs, so it's hard to deal with them more than DDoS from just 1 machine. SO YOU CAN STILL DDoS other servers but try to set the DELAY TIME PER BOT to higher, maybe 10, but that's not gonna do much damage to their server btw.
 
 **Question: How can you be so handsome?**
 Answer: Coding

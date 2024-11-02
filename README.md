@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In short: my only purpose in making this is to test my server's load see if my server can take 1k or 2k players, give me a start so I can update it <3
+In short: my only purpose in making this is to test my server's load see if my server can take 1k or 2k players, give me a star so I can update it <3
 
 In detail, the app will create many non-premium Minecraft 1.21.1 clients to join the server, requiring the server's resources to handle a large number of players at once. The server might get tired and take a break.
 
